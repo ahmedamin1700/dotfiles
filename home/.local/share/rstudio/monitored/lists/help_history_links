@@ -1,0 +1,15 @@
+help/library/ggplot2/html/geom_boxplot.html,R: A box and whiskers plot (in the style of Tukey)
+help/library/ggplot2/html/geom_bar.html,R: Bar charts
+help/library/ggplot2/html/aes_colour_fill_alpha.html,"R: Colour related aesthetics: colour, fill, and alpha"
+help/library/ggplot2/html/ggsave.html,R: Save a ggplot (or other grid object) with sensible defaults
+help/library/base/html/matrix.html,R: Matrices
+help/library/base/html/cut.html,R: Convert Numeric to Factor
+help/library/utils/html/read.table.html,R: Data Input
+help/library/dplyr/html/context.html,R: Information about the "current" group or variable
+help/doc/html/Search?objects=1&port=8787,R: Search Results
+help/library/openxlsx/html/read.xlsx.html,R: Read from an Excel file or Workbook object
+help/library/base/html/unique.html,R: Extract Unique Elements
+help/library/rlang/html/00Index.html,R: Functions for Base Types and Core R and 'Tidyverse' Features
+help/doc/home/,Home
+help/library/base/html/00Index.html,R: The R Base Package
+help/library/palmerpenguins/html/penguins.html,R: Size measurements for adult foraging penguins near Palmer...

@@ -16,6 +16,7 @@ fi
 
 # source local bins
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/snap/bin:$PATH"
 
 # source zinit.
 source "${ZINIT_HOME}/zinit.zsh"
@@ -75,7 +76,7 @@ zinit cdreplay -q
 eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases
-alias v="nvim.appimage"
+alias v="nvim"
 alias ls="exa --color=always -l --no-filesize --icons --no-time --no-user --no-permissions"
 alias la="exa --color=always -l --icons --all"
 alias dstart="systemctl --user start docker-desktop"

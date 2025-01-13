@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Ensure the first argument is provided
+if [ -z "$1" ]; then
+    echo "Error: No file name provided."
+    echo "Usage: $0 \"Your Note Title\""
+    exit 1
+fi
+
+# Define base directory and target subdirectory
+BASE_DIR="/home/ahmed/notes"
+TARGET_DIR="$BASE_DIR/index"
+
+# Ensure the target directory exists
+mkdir -p "$TARGET_DIR"
+
+# Generate a unique timestamp
+timestamp=$(date +%s)
+
+# Format the file name: convert to lowercase, replace spaces with hyphens
+file_name=$(echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+
+# Add .md extension to the formatted file name
+formatted_file_name="${timestamp}-${file_name}.md"
+
+# Full path to the new file
+full_path="$TARGET_DIR/$formatted_file_name"
+
+# Create the new file and open it in Neovim
+touch "$full_path"
+nvim "$full_path"

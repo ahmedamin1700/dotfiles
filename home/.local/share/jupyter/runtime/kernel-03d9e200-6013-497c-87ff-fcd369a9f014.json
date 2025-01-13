@@ -1,0 +1,13 @@
+{
+  "shell_port": 58905,
+  "iopub_port": 51991,
+  "stdin_port": 52417,
+  "control_port": 55279,
+  "hb_port": 50965,
+  "ip": "127.0.0.1",
+  "key": "91c4ea8b-8464e61c99df2f52e4a6293e",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "/home/ahmed/learning/ALX-Python-DS/regression/part_2/5.6Multiple_Linear_Regression_Advanced_Regression_Analysis_2.ipynb"
+}

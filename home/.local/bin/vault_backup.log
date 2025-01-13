@@ -1,0 +1,688 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+To https://github.com/ahmedamin1700/Notes.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/ahmedamin1700/Notes.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[main 6acd7a6] vault backup: 2024-11-27 15:00:02
+ 2 files changed, 38 insertions(+)
+ create mode 100644 index/1732711180-calculating-probabilities.md
+To https://github.com/ahmedamin1700/Notes.git
+   e760a08..6acd7a6  main -> main
+[main f6debab] vault backup: 2024-11-27 16:00:00
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+To https://github.com/ahmedamin1700/Notes.git
+   6acd7a6..f6debab  main -> main
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+To https://github.com/ahmedamin1700/Notes.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/ahmedamin1700/Notes.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[main 7ea1e7f] vault backup: 2024-11-29 11:00:00
+ 3 files changed, 64 insertions(+), 9 deletions(-)
+ create mode 100644 index/1732868398-bayes-theorem.md
+ create mode 100644 index/1732869706-discrete-probability-distributions.md
+To https://github.com/ahmedamin1700/Notes.git
+   5581209..7ea1e7f  main -> main
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+[main 7d4cab3] vault backup: 2024-11-30 11:00:01
+ 3 files changed, 116 insertions(+), 18 deletions(-)
+ create mode 100644 index/1732954642-permutations-and-combinations.md
+ create mode 100644 index/1732956981-distributions.md
+To https://github.com/ahmedamin1700/Notes.git
+   7ea1e7f..7d4cab3  main -> main
+[main 021872b] vault backup: 2024-11-30 12:00:01
+ 3 files changed, 69 insertions(+), 14 deletions(-)
+ delete mode 100644 index/1732956981-distributions.md
+ create mode 100644 index/1732956981-geometric-distributions.md
+ create mode 100644 index/1732960194-binomial-distribution.md
+To https://github.com/ahmedamin1700/Notes.git
+   7d4cab3..021872b  main -> main
+[main 9582392] vault backup: 2024-12-01 12:00:01
+ 2 files changed, 22 insertions(+)
+ create mode 100644 index/1733038568-poisson-distribution.md
+To https://github.com/ahmedamin1700/Notes.git
+   021872b..9582392  main -> main
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+[main 7920150] vault backup: 2024-12-06 10:00:05
+ 2 files changed, 37 insertions(+)
+ create mode 100644 index/1733470287-understanding-covariance.md
+ create mode 100644 index/1733471499-the-covariance-matrix.md
+To https://github.com/ahmedamin1700/Notes.git
+   9582392..7920150  main -> main
+[main e67c025] vault backup: 2024-12-06 11:00:02
+ 1 file changed, 25 insertions(+)
+ create mode 100644 index/1733472010-understanding-correlation.md
+To https://github.com/ahmedamin1700/Notes.git
+   7920150..e67c025  main -> main
+[main 14a21f3] vault backup: 2024-12-06 14:00:03
+ 11 files changed, 126 insertions(+), 75 deletions(-)
+ delete mode 100644 index/.ipynb_checkpoints/1732633729-measures-of-center-tendency-checkpoint.md
+ delete mode 100644 index/1732625041-terminology.md
+ delete mode 100644 index/1732625082-terminology.md
+ delete mode 100644 index/1732625117-statistics.md
+ delete mode 100644 index/1732626199-latex.md
+ delete mode 100644 index/1732629180-binomial.md
+ create mode 100644 index/1733475666-geometric-mean-and-standard-deviation.md
+ create mode 100644 index/1733477135-create-notes-from-terminal-on.md
+ create mode 100644 index/1733477276-vault-backup.md
+ delete mode 100644 index/new-note-for-testing.md
+To https://github.com/ahmedamin1700/Notes.git
+   e67c025..14a21f3  main -> main
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+[main 499376c] vault backup: 2024-12-06 20:00:01
+ 1 file changed, 24 insertions(+)
+ create mode 100644 index/1733507904-combinations-nearly-normal.md
+To https://github.com/ahmedamin1700/Notes.git
+   14a21f3..499376c  main -> main
+[main 3a015f4] vault backup: 2024-12-06 21:00:02
+ 1 file changed, 10 insertions(+), 13 deletions(-)
+To https://github.com/ahmedamin1700/Notes.git
+   499376c..3a015f4  main -> main
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+[main 88cc60a] vault backup: 2024-12-06 23:00:02
+ 2 files changed, 16 insertions(+)
+ create mode 100644 index/1733518779-simple-binomial-sales-quota-analysis.md
+To https://github.com/ahmedamin1700/Notes.git
+   3a015f4..88cc60a  main -> main
+[main 9d82b6c] vault backup: 2024-12-07 00:00:02
+ 3 files changed, 141 insertions(+)
+To https://github.com/ahmedamin1700/Notes.git
+   88cc60a..9d82b6c  main -> main
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+[main dcf6377] vault backup: 2024-12-09 07:00:01
+ 3 files changed, 87 insertions(+), 1 deletion(-)
+ create mode 100644 index/1733718461-uniform-distributions.md
+ create mode 100644 index/1733720364-normal-distribution.md
+To https://github.com/ahmedamin1700/Notes.git
+   9d82b6c..dcf6377  main -> main
+[main 35c3cff] vault backup: 2024-12-11 07:00:01
+ 3 files changed, 65 insertions(+), 9 deletions(-)
+ create mode 100644 index/1733723061-to-z-or-to-t-that-is-the-question.md
+ create mode 100644 index/1733893150-sampling-distributions.md
+To https://github.com/ahmedamin1700/Notes.git
+   dcf6377..35c3cff  main -> main
+[main d503a6a] vault backup: 2024-12-11 08:00:01
+ 2 files changed, 29 insertions(+), 3 deletions(-)
+ create mode 100644 index/1733894801-standard-error-of-the-mean.md
+To https://github.com/ahmedamin1700/Notes.git
+   35c3cff..d503a6a  main -> main
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+[main a91b013] vault backup: 2024-12-11 10:00:01
+ 1 file changed, 31 insertions(+)
+ create mode 100644 index/1733901967-sample-proportions.md
+To https://github.com/ahmedamin1700/Notes.git
+   d503a6a..a91b013  main -> main
+[main 06be1d4] vault backup: 2024-12-11 11:00:01
+ 1 file changed, 37 insertions(+)
+ create mode 100644 index/1733904686-confidence-interval-sigma-known.md
+To https://github.com/ahmedamin1700/Notes.git
+   a91b013..06be1d4  main -> main
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+[main ddd8ac0] vault backup: 2024-12-12 23:00:01
+ 2 files changed, 63 insertions(+)
+ create mode 100644 index/1734034463-model-accuracy-and-metrics.md
+ create mode 100644 index/1734037152-understanding-common-challenges-to-model-accuracy.md
+To https://github.com/ahmedamin1700/Notes.git
+   06be1d4..ddd8ac0  main -> main
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+fatal: unable to access 'https://github.com/ahmedamin1700/Notes.git/': Could not resolve host: github.com
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+fatal: unable to access 'https://github.com/ahmedamin1700/Notes.git/': Could not resolve host: github.com
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date

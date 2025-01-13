@@ -1,0 +1,787 @@
+1735071976708:1+1
+1735072001850:2*2
+1735072001851:1+2*3-5
+1735072064742:1*2*3*4*5*6*7*8*9*10
+1735072236209:source("~/.active-rstudio-document")
+1735072245479:source("~/.active-rstudio-document")
+1735072247725:source("~/.active-rstudio-document")
+1735072250906:source("~/.active-rstudio-document", echo=TRUE)
+1735072301277:source("~/.active-rstudio-document", echo=TRUE)
+1735072414503:source("~/.active-rstudio-document", echo=TRUE)
+1735072464842:source("~/.active-rstudio-document", echo=TRUE)
+1735072477427:(1+2)*3-5
+1735072700433:x <- 4
+1735072709395:x
+1735072813556:x + 1
+1735072813558:x + x
+1735072985416:x <- 1 + 2 + 3 + 4
+1735073179226:a <- 924 + 124
+1735073179227:a * a
+1735074489485:net income <- income - taxes
+1735074505484:net-income <- income - taxes
+1735074571434:income <- 200; taxes <- 30
+1735074586635:net-income <- income - taxes
+1735074608222:ca$h <- income - taxes
+1735074714994:income2 <- taxes2 <- 100
+1735074743350:source("~/learning/r-programming/my-first-r-script.R")
+1735074767923:# Exercise 2.3
+1735074767924:# 1st question
+1735074767925:# net income <- income - taxes
+1735074767934:# net-income <- income - taxes
+1735074767935:ca$h <- income - taxes
+1735075197627:0, 31)
+1735075209826:age <- c(28, 48, 47, 71, 22, 80, 48, 30, 31)
+1735075209828:purchase <- c(20, 59, 2, 12, 22, 160, 34, 34, 29)
+1735075209830:bookstore <- data.frame(age, purchase)
+1735075224811:bookstore
+1735075290477:View(bookstore)
+1735075715378:height <- c(180, 175, 182, 193, 166)
+1735075715379:weight <- c(87, 60, 80, 99, 80)
+1735075715381:people <- data.frame(height, weight)
+1735075720727:View(people)
+1735075747883:x <- 1:5
+1735075755071:x
+1735075767398:x <- 1:5
+1735075767399:x
+1735075780566:x <- 5:1
+1735075780567:x
+1735075817922:x <- 1:5:1
+1735075817925:x
+1735075848275:x <- 1:5+5:1
+1735075848276:x
+1735075899161:x <- 1:5:
+1735075899161:x
+1735075912350:x <- 1:5:1
+1735075912353:x
+1735075935158:x <- 1:5,1
+1735076327727:x <- c(1:5, 4:1)
+1735076327729:x
+1735076412220:mean(age)
+1735076495227:cor(age, purchase)
+1735076650255:cor(age, purchase, method = "spearman")
+1735076751731:?cor
+1735076995846:Sys.time()
+1735077081417:mean(height)
+1735077081418:cor(height, weight)
+1735077114571:?length
+1735077171722:length(height)
+1735077185643:?sort
+1735077187058:sort
+1735077227172:weight
+1735077247316:sort(weight, decreasing = FALSE)
+1735077731967:install.packages("ggplot2")
+1735077827948:ggplot2
+1735077831220:install.packages("ggplot2")
+1735077891075:install.packages("ggplot2")
+1735079310699:library(ggplot2)
+1735079424976:install.packages(c("cli", "farver", "nlme", "rlang", "vctrs"))
+1735079584595:library(ggplot2)
+1735079821206:msleep
+1735079892761:View(msleep)
+1735079974138:head(msleep)
+1735079991137:tail(msleep)
+1735080006836:dim(msleep)
+1735080022541:str(msleep)
+1735080055949:names(msleep)
+1735080209841:?msleep
+1735080297151:data(msleep)
+1735080303936:force(msleep)
+1735080361654:summary(msleep)
+1735080581952:mean(msleep$sleep_total) # Mean
+1735080581959:median(msleep$sleep_total) # Median
+1735080581961:max(msleep$sleep_total) # Max
+1735080581963:min(msleep$sleep_total) # Min
+1735080581965:sd(msleep$sleep_total) # Standard deviation
+1735080581969:var(msleep$sleep_total) # Variance
+1735080581970:quantile(msleep$sleep_total) # Various quantiles
+1735080669588:sum(msleep$sleep_total > 8)
+1735080683919:median(msleep$sleep_total > 8)
+1735080704881:mean(msleep$sleep_total > 8)
+1735080753669:mean(msleep$sleep_rem)
+1735080831325:?mean
+1735080915935:mean(msleep$sleep_rem, na.rm = FALSE)
+1735080923147:mean(msleep$sleep_rem, na.rm = TRUE)
+1735081030248:?cor
+1735081159834:cor(msleep$sleep_total, msleep$sleep_rem, use = "complete.obs")
+1735081267516:table(msleep$vore)
+1735081302238:propotions(table(msleep$vore))
+1735081329659:proportions(table(msleep$vore))
+1735081386088:table(msleep$vore, msleep$conservation)
+1735081404155:proportions(table(msleep$vore, msleep$conservation))
+1735081484837:proportions(table(msleep$vore, msleep$conservation), margin = 1)
+1735081632867:library(palmerpenguins)
+1735081656233:?penguins
+1735081718739:dim(penguins)
+1735081736238:summary(penguins)
+1735081764670:str(penguins)
+1735081795705:head(penguins)
+1735082171635:plot(msleep$sleep_total, msleep$sleep_rem)
+1735082436844:ggplot(msleep, aes(x = sleep_total, y = sleep_rem)) + geom_point()
+1735082803797:ggplot(msleep, aes(sleep_total, sleep_rem)) +
+1735082803798:geom_point()
+1735082875921:ggplot(msleep, aes(sleep_total, awake)) +
+1735082875922:geom_point()
+1735083520469:plot(msleep$sleep_total, msleep$sleep_rem)
+1735083520504:ggplot(msleep, aes(sleep_total, sleep_rem)) +
+1735083520504:geom_point() +
+1735083520504:labs(x = "Total sleep time (h)")
+1735083630253:plot(msleep$sleep_total, msleep$sleep_rem)
+1735083630281:ggplot(msleep, aes(sleep_total, sleep_rem)) +
+1735083630281:geom_point(color = "red") +
+1735083630282:labs(x = "Total sleep time (h)")
+1735083651120:colors()
+1735083784713:ggplot(msleep, aes(sleep_total, sleep_rem, color = vore)) +
+1735083784714:geom_point() +
+1735083784714:labs(x = "Total sleep time (h)")
+1735083858577:ggplot(msleep, aes(sleep_total, sleep_rem, colour = vore)) +
+1735083858578:geom_point() +
+1735083858579:labs(x = "Total sleep time (h)",
+1735083858580:colour = "Feeding behaviour")
+1735083905463:ggplot(msleep, aes(sleep_total, sleep_rem, colour = sleep_cycle)) +
+1735083905465:geom_point() +
+1735083905466:labs(x = "Total sleep time (h)")
+1735085042086:ggplot(penguins, aes(bill_length_mm, flipper_length_mm), colour = "species") +
+1735085042087:geom_point() +
+1735085042090:labs(x = "Bill length (mm)", y = "Flipper length (mm)")
+1735085084982:ggplot(penguins, aes(bill_length_mm, flipper_length_mm), colour = species) +
+1735085084983:geom_point() +
+1735085084984:labs(x = "Bill length (mm)", y = "Flipper length (mm)")
+1735085144686:ggplot(penguins, aes(bill_length_mm, flipper_length_mm, colour = species)) +
+1735085144687:geom_point() +
+1735085144687:labs(x = "Bill length (mm)", y = "Flipper length (mm)")
+1735085187007:ggplot(penguins, aes(bill_length_mm, flipper_length_mm, colour = species)) +
+1735085187008:geom_point(alpha = 1) +
+1735085187009:labs(x = "Bill length (mm)", y = "Flipper length (mm)")
+1735085217350:ggplot(penguins, aes(bill_length_mm, flipper_length_mm, colour = species)) +
+1735085217351:geom_point(alpha = 0.75) +
+1735085217351:labs(x = "Bill length (mm)", y = "Flipper length (mm)")
+1735085235368:ggplot(penguins, aes(bill_length_mm, flipper_length_mm, colour = species)) +
+1735085235369:geom_point(alpha = 0.25) +
+1735085235370:labs(x = "Bill length (mm)", y = "Flipper length (mm)")
+1735085311394:ggplot(penguins, aes(bill_length_mm, flipper_length_mm, colour = species)) +
+1735085311394:geom_point() +
+1735085311394:labs(x = "Bill length (mm)", y = "Flipper length (mm)")
+1735085342365:ggplot(penguins, aes(bill_length_mm, flipper_length_mm, colour = species, shape = island)) +
+1735085342366:geom_point() +
+1735085342367:labs(x = "Bill length (mm)", y = "Flipper length (mm)")
+1735085404147:ggplot(penguins, aes(bill_length_mm, flipper_length_mm, colour = species, shape = island, size = body_mass_g)) +
+1735085404148:geom_point() +
+1735085404149:labs(x = "Bill length (mm)", y = "Flipper length (mm)")
+1735116751100:ggplot(msleep, aes(brainwt, sleep_total, colour = vore)) +
+1735116751100:geom_point() +
+1735116751100:labs(x = "Brain weight",
+1735116751100:y = "Total sleep time")
+1735116826179:ggplot(msleep, aes(brainwt, sleep_total, colour = vore)) +
+1735116826179:geom_point() +
+1735116826180:labs(x = "Brain weight",
+1735116826180:y = "Total sleep time") +
+1735116826180:xlim(0, 1.5)
+1735116918058:ggplot(msleep, aes(log(brainwt), sleep_total, colour = vore)) +
+1735116918059:geom_point() +
+1735116918060:labs(x = "Brain weight",
+1735116918062:y = "Total sleep time")
+1735117017451:ggplot(msleep, aes(brainwt, sleep_total, colour = vore)) +
+1735117017452:geom_point() +
+1735117017453:labs(x = "Brain weight",
+1735117017454:y = "Total sleep time") +
+1735117017455:scale_x_log10()
+1735117070388:ggplot(msleep, aes(brainwt, sleep_total, colour = vore)) +
+1735117070388:geom_point() +
+1735117070389:labs(x = "Brain weight (logarithmic scale)",
+1735117070389:y = "Total sleep time") +
+1735117070389:scale_x_log10()
+1735117145421:options(scipen = 1000)
+1735117145422:ggplot(msleep, aes(brainwt, sleep_total, colour = vore)) +
+1735117145430:geom_point() +
+1735117145431:labs(x = "Brain weight (logarithmic scale)",
+1735117145432:y = "Total sleep time") +
+1735117145432:scale_x_log10()
+1735117288787:options(scipen = 1000)
+1735117288787:ggplot(msleep, aes(bodywt, brainwt, colour = sleep_total)) +
+1735117288788:geom_point() +
+1735117288789:labs(x = "Body weight (logarithmic scale)",
+1735117288789:y = "Brain weight (logarithmic scale)") +
+1735117288790:scale_x_log10() +
+1735117288791:scale_y_log10()
+1735117405656:ggplot(msleep, aes(brainwt, sleep_total)) +
+1735117405656:geom_point() +
+1735117405657:labs(x = "Brain weight (logarithmic scale)",
+1735117405657:y = "Total sleep time") +
+1735117405657:scale_x_log10() +
+1735117405657:facet_wrap(~ vore)
+1735117558005:ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
+1735117558005:geom_point() +
+1735117558005:facet_wrap(~ species)
+1735117599897:?facet_wrap
+1735117638378:ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
+1735117638379:geom_point() +
+1735117638380:facet_wrap(~ species, nrow = 2)
+1735117773281:ggplot(msleep, aes(vore, sleep_total)) +
+1735117773281:geom_point()
+1735117844625:ggplot(msleep, aes(vore, sleep_total)) +
+1735117844626:geom_boxplot()
+1735118012221:ggplot(penguins, aes(species, bill_length_mm)) +
+1735118012222:geom_boxplot()
+1735118028446:?geom_boxplot
+1735118153943:ggplot(penguins, aes(species, bill_length_mm)) +
+1735118153944:geom_boxplot(notch = TRUE)
+1735118181357:ggplot(penguins, aes(species, bill_length_mm)) +
+1735118181358:geom_boxplot() +
+1735118181359:geom_jitter(size = 0.5, alpha = 0.25)
+1735118202307:geom_jitter()
+1735118211635:?geom_jitter()
+1735118249942:?geom_boxplot
+1735118305539:ggplot(penguins, aes(species, bill_length_mm)) +
+1735118305540:geom_boxplot(colour = "red") +
+1735118305541:geom_jitter(size = 0.5, alpha = 0.25)
+1735118367729:ggplot(msleep, aes(sleep_total)) +
+1735118367730:geom_histogram()
+1735118650243:ggplot(penguins, aes(bill_length_mm)) +
+1735118650243:geom_histogram() +
+1735118650244:facet_wrap(~ species)
+1735118762242:ggplot(penguins, aes(bill_length_mm)) +
+1735118762243:geom_histogram(colour = "black") +
+1735118762245:facet_wrap(~ species)
+1735118804844:ggplot(penguins, aes(bill_length_mm)) +
+1735118804844:geom_histogram(colour = "black", fill = "blue") +
+1735118804844:facet_wrap(~ species)
+1735119005939:ggplot(msleep, aes(factor(1), fill = vore)) +
+1735119005940:geom_bar()
+1735119056769:ggplot(msleep, aes(vore)) +
+1735119056769:geom_bar()
+1735119109000:ggplot(msleep, aes(vore)) +
+1735119109001:geom_bar(colour = "~ vore")
+1735119121330:ggplot(msleep, aes(vore)) +
+1735119121331:geom_bar(colour = "blue")
+1735119134389:ggplot(msleep, aes(vore)) +
+1735119134390:geom_bar(colour = "black")
+1735119155023:ggplot(msleep, aes(vore, colour = vore)) +
+1735119155024:geom_bar(colour = "black")
+1735119181426:ggplot(msleep, aes(vore colour = vore)) +
+1735119181596:ggplot(msleep, aes(vore colour = vore)) +
+1735119193758:ggplot(msleep, aes(vore, colour = vore)) +
+1735119193758:geom_bar()
+1735119209206:ggplot(msleep, aes(vore, fill = vore)) +
+1735119209206:geom_bar()
+1735119333928:ggplot(penguins, aes(species)) +
+1735119333929:geom_bar(fill = species)
+1735119348020:ggplot(penguins, aes(species)) +
+1735119348021:geom_bar()
+1735119380528:?geom_bar
+1735119485503:ggplot(penguins, aes(species, fill = species)) +
+1735119485504:geom_bar()
+1735119493285:ggplot(penguins, aes(species, fill = sex)) +
+1735119493287:geom_bar()
+1735119540217:ggplot(penguins, aes(species, fill = sex)) +
+1735119540218:geom_bar(position = "dodge")
+1735119576930:ggplot(penguins, aes(species, fill = sex)) +
+1735119576930:geom_bar(position = "dodge") +
+1735119576931:coord_flip()
+1735120655435:?ggsave
+1735120729127:my_plot <- ggplot(penguins, aes(bill_length_mm)) +
+1735120729128:geom_histogram(colour = "black", fill = "blue") +
+1735120729128:facet_wrap(~ species)
+1735120740880:my_plot
+1735120833837:ggsave("plot.png", my_plot, width = 4, height = 4, dpi = 600)
+1735120934499:plot.png
+1735121218951:x <- 6
+1735121218952:y <- "Scotland"
+1735121218954:z <- TRUE
+1735121218955:class(x)
+1735121218958:class(y)
+1735121218960:class(z)
+1735121242354:numbers <- c(6, 9, 12)
+1735121242355:class(numbers)
+1735121267490:all_together <- c(x, y, z)
+1735121267491:all_together
+1735121267492:class(all_together)
+1735121650679:WorldPhones
+1735121662638:class(WorldPhones)
+1735121679676:airquality
+1735121700005:class(airquality)
+1735121829805:a <- 'A rainy day in Edinburgh'
+1735121836298:class(a)
+1735121845962:a <- "A rainy day in Edinburgh"
+1735121847442:class(a)
+1735121863458:1L + 2
+1735121868115:1L + 2L
+1735121883450:"hello" + 3
+1735121900303:FALSE * 2
+1735121911982:TRUE * 2
+1735121916287:TRUE + 3
+1735121955283:nrow(airquality)
+1735121962167:ncol(airquality)
+1735121967987:dim(airquality)
+1735121979212:names(airquality)
+1735121987807:row.names(airquality)
+1735121995301:names(airquality)
+1735122061246:matrix(1:6, nrow = 2)
+1735122118228:x <- 1:6
+1735122148612:matrix(x, nrow=2, byrow=TRUE)
+1735122174137:matrix(x, ncol=2)
+1735122188461:?matrics
+1735122194507:?matrix
+1735151782208:airquality[,3]
+1735151839564:airquality
+1735151926970:airquality[1:5,]
+1735152130813:cor(x = airquality[, "Wind"], y = airquality[, "Temp"])
+1735152277644:airquality[, -c("Temp", "Wind")]
+1735152338372:airquality[, !(names(airquality) %in% c("Temp", "Wind"))]
+1735152448864:airquality[, !c("Temp", "Wind")]
+1735152471767:airquality[, c("Temp", "Wind")]
+1735152498178:airquality[, !(c("Temp", "Wind"))]
+1735152887277:which.max(airquality$Temp)
+1735152908777:airquality[120,]
+1735152971283:airquality[which.max(airquality$Temp),]
+1735154183369:subset(airquality, Temp > 90)
+1735154257474:all(airquality$Temp > 90)
+1735154266852:which(airquality$Temp > 90)
+1735154294397:any(airquality$Temp > 90)
+1735154303812:sum(airquality$Temp > 90)
+1735154374564:mean(airquality$Temp > 90)
+1735154510939:airquality[which.min(airquality$Temp), ]
+1735154539561:sum(airquality$Wind > 17)
+1735154564420:sum(is.na(airquality$Ozone))
+1735154633705:sum((airquality$Temp < 70) & (airquality$Wind > 10))
+1735154716342:?cut
+1735155031242:airquality$TempCat <- cut(airquality$Temp,
+1735155031244:breaks = c(50, 70, 90, 110),
+1735155031245:labels = c("(50, 70]", "(70, 90]", "(90, 110]"),
+1735155031246:right = TRUE)
+1735155041557:View(airquality)
+1735155192708:table(airquality$TempCat)
+1735155347090:aggregate(Temp ~ Month, airquality, FUN = mean)
+1735155359651:aggregate(Temp ~ Month, data = airquality, FUN = mean)
+1735155477186:aggregate(Ozone ~ Month, data = airquality, FUN = mean)
+1735155553511:aggregate(cbind(Wind, Temp) ~ Month, data = airquality, FUN = sd)
+1735278277814:1+1
+1735278277817:2*2
+1735278277825:1+2*3-5
+1735278277827:(1+2)*3-5
+1735278277830:x <- 4
+1735278277831:x + 1
+1735278277833:x + x
+1735278277834:x <- 1 + 2 + 3 + 4
+1735278277835:# Exercise 2.2
+1735278277836:a <- 924 + 124
+1735278277837:a * a
+1735278277839:# Exercise 2.3
+1735278277839:# 1st question
+1735278277840:# net income <- income - taxes
+1735278277841:# net-income <- income - taxes
+1735278277841:# ca$h <- income - taxes
+1735278277842:age <- c(28, 48, 47, 71, 22, 80, 48, 30, 31)
+1735278277843:purchase <- c(20, 59, 2, 12, 22, 160, 34, 34, 29)
+1735278277843:bookstore <- data.frame(age, purchase)
+1735278277845:height <- c(180, 175, 182, 193, 166)
+1735278277845:weight <- c(87, 60, 80, 99, 80)
+1735278277846:people <- data.frame(height, weight)
+1735278277847:x <- c(1:5, 4:1)
+1735278277847:x
+1735278277848:mean(age)
+1735278277849:cor(age, purchase, method = "spearman")
+1735278277851:mean(height)
+1735278277851:cor(height, weight)
+1735278277852:library(ggplot2)
+1735278304411:library(ggplot2)
+1735278433234:library(ggplot2)
+1735278435728:summary(msleep)
+1735278446613:1+1
+1735278446615:2*2
+1735278446618:1+2*3-5
+1735278446619:(1+2)*3-5
+1735278446626:x <- 4
+1735278446627:x + 1
+1735278446628:x + x
+1735278446628:x <- 1 + 2 + 3 + 4
+1735278446629:# Exercise 2.2
+1735278446629:a <- 924 + 124
+1735278446629:a * a
+1735278446630:# Exercise 2.3
+1735278446631:# 1st question
+1735278446631:# net income <- income - taxes
+1735278446631:# net-income <- income - taxes
+1735278446632:# ca$h <- income - taxes
+1735278446632:age <- c(28, 48, 47, 71, 22, 80, 48, 30, 31)
+1735278446632:purchase <- c(20, 59, 2, 12, 22, 160, 34, 34, 29)
+1735278446633:bookstore <- data.frame(age, purchase)
+1735278446634:height <- c(180, 175, 182, 193, 166)
+1735278446635:weight <- c(87, 60, 80, 99, 80)
+1735278446635:people <- data.frame(height, weight)
+1735278446636:x <- c(1:5, 4:1)
+1735278446637:x
+1735278446638:mean(age)
+1735278446638:cor(age, purchase, method = "spearman")
+1735278446640:mean(height)
+1735278446641:cor(height, weight)
+1735278446642:library(ggplot2)
+1735278446642:summary(msleep)
+1735278446653:mean(msleep$sleep_total) # Mean
+1735278446654:median(msleep$sleep_total) # Median
+1735278446655:max(msleep$sleep_total) # Max
+1735278446656:min(msleep$sleep_total) # Min
+1735278446656:sd(msleep$sleep_total) # Standard deviation
+1735278446657:var(msleep$sleep_total) # Variance
+1735278446658:quantile(msleep$sleep_total) # Various quantiles
+1735278446660:library(palmerpenguins)
+1735278446705:# ploting
+1735278446705:plot(msleep$sleep_total, msleep$sleep_rem)
+1735278446750:ggplot(msleep, aes(sleep_total, sleep_rem, colour = sleep_cycle)) +
+1735278446750:geom_point() +
+1735278446750:labs(x = "Total sleep time (h)")
+1735278447336:ggplot(msleep, aes(sleep_total, awake)) +
+1735278447336:geom_point()
+1735278447622:ggplot(penguins, aes(bill_length_mm, flipper_length_mm, colour = species, shape = island, size = body_mass_g)) +
+1735278447622:geom_point() +
+1735278447622:labs(x = "Bill length (mm)", y = "Flipper length (mm)")
+1735278448234:options(scipen = 1000)
+1735278448235:ggplot(msleep, aes(brainwt, sleep_total, colour = vore)) +
+1735278448235:geom_point() +
+1735278448235:labs(x = "Brain weight (logarithmic scale)",
+1735278448235:y = "Total sleep time") +
+1735278448236:scale_x_log10()
+1735278448535:options(scipen = 1000)
+1735278448536:ggplot(msleep, aes(bodywt, brainwt, colour = sleep_total)) +
+1735278448536:geom_point() +
+1735278448536:labs(x = "Body weight (logarithmic scale)",
+1735278448537:y = "Brain weight (logarithmic scale)") +
+1735278448537:scale_x_log10() +
+1735278448537:scale_y_log10()
+1735278448776:ggplot(msleep, aes(brainwt, sleep_total)) +
+1735278448776:geom_point() +
+1735278448776:labs(x = "Brain weight (logarithmic scale)",
+1735278448777:y = "Total sleep time") +
+1735278448777:scale_x_log10() +
+1735278448777:facet_wrap(~ vore)
+1735278449299:ggplot(penguins, aes(bill_length_mm, flipper_length_mm)) +
+1735278449299:geom_point() +
+1735278449299:facet_wrap(~ species, nrow = 2)
+1735278449696:ggplot(msleep, aes(vore, sleep_total)) +
+1735278449696:geom_boxplot()
+1735278450044:ggplot(penguins, aes(species, bill_length_mm)) +
+1735278450044:geom_boxplot() +
+1735278450044:geom_jitter(size = 0.5, alpha = 0.25)
+1735278450368:ggplot(msleep, aes(sleep_total)) +
+1735278450369:geom_histogram()
+1735278450625:ggplot(penguins, aes(bill_length_mm)) +
+1735278450626:geom_histogram(colour = "black", fill = "blue") +
+1735278450626:facet_wrap(~ species)
+1735278451155:ggplot(msleep, aes(factor(1), fill = vore)) +
+1735278451156:geom_bar()
+1735278451452:ggplot(msleep, aes(vore, fill = vore)) +
+1735278451453:geom_bar()
+1735278451716:ggplot(penguins, aes(species, fill = sex)) +
+1735278451716:geom_bar(position = "dodge") +
+1735278451716:coord_flip()
+1735278451988:my_plot <- ggplot(penguins, aes(bill_length_mm)) +
+1735278451988:geom_histogram(colour = "black", fill = "blue") +
+1735278451988:facet_wrap(~ species)
+1735278451994:my_plot
+1735278452434:ggsave("plot.png", my_plot, width = 4, height = 4, dpi = 600)
+1735278453214:airquality[, !(names(airquality) %in% c("Temp", "Wind"))]
+1735278453478:# airquality[, !(c("Temp", "Wind"))]
+1735278453479:airquality$TempCat <- cut(airquality$Temp,
+1735278453479:breaks = c(50, 70, 90, 110),
+1735278453479:labels = c("(50, 70]", "(70, 90]", "(90, 110]"),
+1735278453480:right = TRUE)
+1735278453481:# aggregation
+1735278453481:aggregate(Temp ~ Month, data = airquality, FUN = mean)
+1735278453487:aggregate(Ozone ~ Month, data = airquality, FUN = mean)
+1735278453491:aggregate(cbind(Wind, Temp) ~ Month, data = airquality, FUN = sd)
+1735278453495:aggregate(Temp ~ Month, data = airquality, FUN = length)
+1735278453500:by(airquality$Temp, airquality$Month, mean)
+1735278453505:names(airquality) # Check that Wind and Temp are in columns 3 and 4
+1735278453506:by(airquality[, 3:4], airquality$Month, cor)
+1735278453515:### Exercise 2.28 ###
+1735278453515:install.packages("datasauRus")
+1735278453687:library("datasauRus")
+1735278453700:View(datasaurus_dozen)
+1735278453704:summary(datasaurus_dozen)
+1735278453706:names(datasaurus_dozen)
+1735278453706:aggregate(cbind(x, y) ~ dataset, data = datasaurus_dozen, FUN = mean)
+1735278453712:aggregate(cbind(x, y) ~ dataset, data = datasaurus_dozen, FUN = sd)
+1735278453717:by(datasaurus_dozen[,2:3], datasaurus_dozen$dataset, cor)
+1735278453730:ggplot(data = datasaurus_dozen, aes(x = x, y = y)) +
+1735278453731:geom_point() +
+1735278453731:facet_wrap(~ dataset)
+1735278455206:library("dplyr")
+1735278455227:filter(airquality, Temp > 80)
+1735278455271:airquality |>
+1735278455272:filter(Temp > 80) |>
+1735278455272:mutate(Wind = Wind * 0.44704) |>
+1735278455272:group_by(Month) |>
+1735278455272:summarise(Mean_wind_speed = mean(Wind)) ->
+1735278455272:hot_wind_means
+1735278456261:hot_wind_means
+1735278456305:### Exercise 2.29 ###
+1735278456305:age <- c(28, 48, 47, 71, 22, 80, 48, 30, 31)
+1735278456306:purchase <- c(20, 59, 2, 12, 22, 160, 34, 34, 29)
+1735278456306:visit_length <- c(5, 2, 20, 22, 12, 31, 9, 10, 11)
+1735278456307:bookstore <- data.frame(age, purchase, visit_length)
+1735278456308:bookstore |>
+1735278456308:mutate(rev_per_minute = purchase / visit_length) ->
+1735278456309:bookstore
+1735278456311:bookstore
+1735278456316:imported_data <- read.csv("./philosophers.csv")
+1735278484506:getwd()
+1735278523919:setwd("/home/ahmed/learning/r-basics")
+1735278527712:getwd()
+1735278532479:imported_data <- read.csv("./philosophers.csv")
+1735279162337:file_path <- "/home/ahmed/learning/r-basics/vas.csv"
+1735279162338:vas <- read.csv(file_path, sep = ";", dec = ",", skip = 4)
+1735279162347:View(vas)
+1735279162570:str(vas)
+1735279198058:?read.csv
+1735279449647:mean(vas)
+1735279460449:mean(vas$VAS)
+1735279473316:mean(vas$VAS, na.rm = FALSE)
+1735279479406:mean(vas$VAS, na.rm = TRUE)
+1735279494200:summary(vas)
+1735279602044:aggregate(VAS ~ ID, data = vas, FUN = mean)
+1735279641376:aggregate(VAS ~ ID, data = vas, FUN = max)
+1735279947040:vas |>
+1735279947041:filter(VAS >= 7) |>
+1735279947041:group_by(ID) |>
+1735279947042:summarise(number_high_VAS = count(VAS))
+1735279973756:vas |>
+1735279973757:filter(VAS >= 7) |>
+1735279973758:group_by(ID) |>
+1735279973758:summarise(number_high_VAS = count(ID))
+1735280180066:vas |>
+1735280180067:filter(VAS >= 7) |>
+1735280180068:group_by(ID) |>
+1735280180070:summarise(number_of_days = n()) ->
+1735280180071:number_high_VAS_days
+1735280180089:number_high_VAS_days
+1735280191546:?n()
+1735280283123:?read.xlsx
+1735280298478:??read.xlsx
+1735280457367:### Exercise 2.32 ###
+1735280457368:library(openxlsx)
+1735280518188:file_path <- "/home/ahmed/learning/r-basics/projects-email.xlsx"
+1735280518188:emails <- read.xlsx(file_path, sheet = "Email")
+1735280536338:emails
+1735280551019:?unique
+1735280704415:unique_emails <- unique(emails$`E-mail`, incomparables = FALSE)
+1735280704417:unique_emails
+1735281027184:file_path <- "/home/ahmed/learning/r-basics/vas-transposed.csv"
+1735281027184:vas_transposed <- read.csv(file_path)
+1735281027338:head(vas_transposed)
+1735281061490:print(head(vas_transposed))
+1735281168111:vas_transposed <- read.csv(file_path, row.names = 1)
+1735281168256:head(vas_transposed)
+1735281188110:vas_transposed <- read.csv(file_path, row.names = 1)
+1735281188265:head(vas_transposed)
+1735281257450:vas_transposed.t
+1735281262444:vas_transposed.t()
+1735281273206:t(vas_transposed)
+1735281330497:as.data.frame(t(vas_transposed))
+1735281382815:df <- as.data.frame(t(vas_transposed))
+1735281382849:head(df)
+1735281975369:gc()
+1735282570277:library(palmerpenguins)
+1735282570309:?penguins
+1735282708415:library(dplyr)
+1735282708468:penguins |>
+1735282708468:select(species) |>
+1735282708468:table()
+1735282735276:penguins |>
+1735282735277:select(species) |>
+1735282735277:table()
+1735283331032:library(gtsummary)
+1735283566265:library(gtsummary)
+1735283589119:library(gtsummary)
+1735283601153:install.packages(c("gtsummary", "flextable", "ivo.table"))
+1735283640160:library(gtsummary)
+1735283670570:library(gtsummary)
+1735283677169:library(palmerpenguins)
+1735283677234:?penguins
+1735283677267:library(dplyr)
+1735283677285:penguins |>
+1735283677285:select(species) |>
+1735283677285:table()
+1735283677306:library(gtsummary)
+1735283722033:penguins |>
+1735283722034:select(species) |>
+1735283722034:tbl_summary()
+1735283772876:library(rlang)
+1735283799570:detach("package:rlang", unload = TRUE)
+1735284088917:penguins |>
+1735284088918:select(species) |>
+1735284088918:tbl_summary()
+1735284172144:penguins |>
+1735284172144:select(species) |>
+1735284172145:tbl_summary()
+1735284208018:library(palmerpenguins)
+1735284208020:?penguins
+1735284208613:library(dplyr)
+1735284208615:penguins |>
+1735284208616:select(species) |>
+1735284208616:table()
+1735284208623:library(gtsummary)
+1735284208624:penguins |>
+1735284208625:select(species) |>
+1735284208625:tbl_summary()
+1735285269557:penguins |>
+1735285269558:select(species) |>
+1735285269559:tbl_summary()
+1735287823936:library(palmerpenguins)
+1735287890253:library(palmerpenguins)
+1735287890257:?penguins
+1735287890300:library(dplyr)
+1735287890301:penguins |>
+1735287890301:select(species) |>
+1735287890301:table()
+1735287890309:library(gtsummary)
+1735287890309:penguins |>
+1735287890309:select(species) |>
+1735287890309:tbl_summary()
+1735288035200:library(palmerpenguins)
+1735288035216:?penguins
+1735288035229:library(dplyr)
+1735288036157:penguins |>
+1735288036157:select(species) |>
+1735288036157:table()
+1735288036177:library(gtsummary)
+1735288036214:penguins |>
+1735288036214:select(species) |>
+1735288036214:tbl_summary()
+1735288196403:library(flextable)
+1735288202918:library(flextable)
+1735288216268:install.packages("flextable")
+1735288346348:library(palmerpenguins)
+1735288346370:?penguins
+1735288346386:library(dplyr)
+1735288347379:penguins |>
+1735288347379:select(species) |>
+1735288347379:table()
+1735288347408:library(gtsummary)
+1735288347468:penguins |>
+1735288347468:select(species) |>
+1735288347468:tbl_summary()
+1735288349409:library(flextable)
+1735288373337:library(flextable)
+1735288391242:install.packages("flextable")
+1735288410632:library(flextable)
+1735288461793:install.packages(c("gdtools","officer","ragg","flextable"))
+1735288481924:library(flextable)
+1735288550645:library(palmerpenguins)
+1735288550665:?penguins
+1735288550682:library(dplyr)
+1735288551689:penguins |>
+1735288551689:select(species) |>
+1735288551690:table()
+1735288551724:library(gtsummary)
+1735288551763:penguins |>
+1735288551764:select(species) |>
+1735288551764:tbl_summary()
+1735288553589:install.packages(c("gdtools","officer","ragg","flextable"))
+1735288564769:library(flextable)
+1735288647496:library(flextable)
+1735288672989:library(palmerpenguins)
+1735288673030:?penguins
+1735288673048:library(dplyr)
+1735288673789:penguins |>
+1735288673790:select(species) |>
+1735288673791:table()
+1735288685531:library(gtsummary)
+1735288691223:penguins |>
+1735288691224:select(species) |>
+1735288691224:tbl_summary()
+1735288694138:library(flextable)
+1735288704787:penguins |>
+1735288704788:select(species) |>
+1735288704788:tbl_summary() |>
+1735288704789:as_flex_table() |> # Convert the table to a format that can be exported
+1735288704789:save_as_docx(path = "my_table.docx")
+1735360834162:renv
+1735361220078:renv::init()
+1735361529267:renv::install("gt")
+1735361577703:renv::install("rlang")
+1735361641377:renv::deactivate()
+1735361690844:install.packages("ivo.table")
+1735361853018:library(palmerpenguins)
+1735361854400:?penguins
+1735361858232:library(dplyr)
+1735361866431:penguins |>
+1735361866432:select(species) |>
+1735361866432:table()
+1735361870175:library(gtsummary)
+1735361875450:penguins |>
+1735361875450:select(species) |>
+1735361875451:tbl_summary()
+1735361879500:library(flextable)
+1735361882016:penguins |>
+1735361882016:select(species) |>
+1735361882016:tbl_summary() |>
+1735361882017:as_flex_table() |> # Convert the table to a format that can be exported
+1735361882017:save_as_docx(path = "my_table.docx")
+1735362008262:install.packages("ivo.table")
+1735362082691:install.packages("ivo.table")
+1735362115290:penguins |>
+1735362115291:select(species) |>
+1735362115296:ivo_table()
+1735362119609:library(dplyr)
+1735362120803:library(ivo.table)
+1735362122876:penguins |>
+1735362122883:select(species) |>
+1735362122885:ivo_table()
+1735362159322:penguins |>
+1735362159324:select(species) |>
+1735362159325:ivo_table(color = "darkred",
+1735362159326:font = "Garamond",
+1735362159327:percent_by = "row")
+1735362209776:penguins |>
+1735362209778:select(species) |>
+1735362209779:ivo_table(color = "darkred",
+1735362209780:font = "Garamond",
+1735362209780:percent_by = "row",
+1735362209781:long_table = TRUE)
+1735362239263:penguins |>
+1735362239264:select(species) |>
+1735362239265:ivo_table(color = "darkred",
+1735362239266:font = "Garamond",
+1735362239266:percent_by = "column",
+1735362239267:long_table = TRUE)
+1735362246924:penguins |>
+1735362246924:select(species) |>
+1735362246925:ivo_table(color = "darkred",
+1735362246925:font = "Garamond",
+1735362246926:percent_by = "col",
+1735362246926:long_table = TRUE)
+1735362263413:penguins |>
+1735362263414:select(species) |>
+1735362263416:ivo_table(color = "darkred",
+1735362263416:font = "Garamond",
+1735362263418:percent_by = "tot",
+1735362263419:long_table = TRUE)
+1735362361688:penguins |>
+1735362361689:select(species, island) |>
+1735362361690:ftable()
+1735362466462:library(ivo.table)
+1735362467791:penguins |>
+1735362467792:select(species, island) |>
+1735362467793:ivo_table()
+1735362575961:library(dplyr)
+1735362576479:library(gtsummary)
+1735362576995:penguins |>
+1735362576996:select(species, island) |>
+1735362576997:tbl_summary(by = species)
+1735362745261:library(ivo.table)
+1735362745262:penguins |> select(sex, species, island) |>
+1735362745263:ivo_table()
+1735362793217:penguins |> select(sex, species, island) |>
+1735362793217:ivo_table(exclude_missing = TRUE)
+1735362800255:penguins |> select(sex, species, island, year) |>
+1735362800256:ivo_table()
+1735362875516:library(dplyr)
+1735362875518:library(gtsummary)
+1735362875520:penguins |>
+1735362875530:select(species, sex, island) |>
+1735362875531:tbl_summary(by = species)
+1735365102176:sample(1:60, 5)
+1735365104460:sample(1:60, 5)
+1735365105578:sample(1:60, 5)
+1735365106696:sample(1:60, 5)
+1735681899423:ls()
+1735681938376:gc()

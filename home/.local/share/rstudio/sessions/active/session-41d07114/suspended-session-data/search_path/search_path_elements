@@ -1,0 +1,15 @@
+.GlobalEnv
+package:ivo.table
+package:flextable
+package:gtsummary
+package:dplyr
+package:palmerpenguins
+tools:rstudio
+package:stats
+package:graphics
+package:grDevices
+package:utils
+package:datasets
+package:methods
+Autoloads
+package:base
