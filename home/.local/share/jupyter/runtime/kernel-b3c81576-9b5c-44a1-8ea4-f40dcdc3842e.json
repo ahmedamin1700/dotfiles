@@ -1,0 +1,13 @@
+{
+  "shell_port": 56103,
+  "iopub_port": 55239,
+  "stdin_port": 45417,
+  "control_port": 53973,
+  "hb_port": 35943,
+  "ip": "127.0.0.1",
+  "key": "8e5027c7-8d5df57a3cc6dc548ad5dbc2",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "/home/ahmed/alx/unsupervised_learning/part_4/10.3recommender_systems_content_based_filtering_examples.ipynb"
+}

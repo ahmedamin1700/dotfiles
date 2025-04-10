@@ -1,0 +1,13 @@
+{
+  "base_url": "/",
+  "hostname": "localhost",
+  "password": false,
+  "pid": 759,
+  "port": 8888,
+  "root_dir": "/home/ahmed/learning/python_for_data_analysis",
+  "secure": false,
+  "sock": "",
+  "token": "dbbd25a5c312449f499b26fbed8df605afd68c6e336faedf",
+  "url": "http://localhost:8888/",
+  "version": "2.14.1"
+}
