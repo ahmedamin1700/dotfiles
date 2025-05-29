@@ -56,8 +56,8 @@ bindkey "^[[B" history-search-forward
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa --color=always $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'exa --color=always $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd --color=always $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'lsd --color=always $realpath'
 
 # Add in snippets
 zinit snippet OMZP::git
@@ -77,11 +77,17 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases
 alias v="nvim"
-alias ls="exa --color=always -l --no-filesize --icons --no-time --no-user --no-permissions"
-alias la="exa --color=always -l --icons --all"
+alias l="lsd --color=always --icon=always"
+alias la="lsd --color=always --icon=always -all"
+alias lt="lsd --color=always --icon=always -all --tree"
 alias dstart="systemctl --user start docker-desktop"
 alias dstop="systemctl --user stop docker-desktop"
 alias togglekeyboard="sh -c ~/.scripts/togglekeyboard"
+
+# dnf
+alias install="sudo dnf install"
+alias update="sudo dnf update"
+alias search="sudo dnf se"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
