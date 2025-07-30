@@ -32,10 +32,10 @@ history               = 65535
 #multiplier            = 3
 
 [font]
-normal                = { family = "JetBrainsMono Nerd Font", style = "Regular" }
-bold                  = { family = "JetBrainsMono Nerd Font", style = "Bold" }
-italic                = { family = "JetBrainsMono Nerd Font", style = "Italic" }
-bold_italic           = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+normal                = { family = "JetBrainsMono", style = "Regular" }
+bold                  = { family = "JetBrainsMono", style = "Bold" }
+italic                = { family = "JetBrainsMono", style = "Italic" }
+bold_italic           = { family = "JetBrainsMono", style = "Bold Italic" }
 #size                  = 11.25
 offset                = { x = 0, y = 0 }
 glyph_offset          = { x = 0, y = 0 }

@@ -56,8 +56,8 @@ bindkey "^[[B" history-search-forward
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd --color=always $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'lsd --color=always $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --color=always $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --color=always $realpath'
 
 # Add in snippets
 zinit snippet OMZP::git
@@ -71,23 +71,24 @@ zinit snippet OMZP::command-not-found
 zinit cdreplay -q
 
 # Shell integrations
-# eval "$(fzf --zsh)"
+eval "$(fzf --zsh)"
 # curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash -- Ubuntu
 eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases
 alias v="nvim"
-alias l="lsd --color=always --icon=always"
-alias la="lsd --color=always --icon=always -all"
-alias lt="lsd --color=always --icon=always -all --tree"
-alias dstart="systemctl --user start docker-desktop"
-alias dstop="systemctl --user stop docker-desktop"
+alias ll="eza --color=always --icons=always"
+alias la="eza --color=always --icons=always -all"
+alias lt="eza --color=always --icons=always -all --tree"
+alias dstart="sudo systemctl start docker.service"
+alias dstop="sudo systemctl stop docker.service"
 alias togglekeyboard="sh -c ~/.scripts/togglekeyboard"
 
 # dnf
-alias install="sudo dnf install"
-alias update="sudo dnf update"
-alias search="sudo dnf se"
+alias install="sudo pacman -S"
+alias update="sudo pacman -Syy"
+alias remove="sudo pacman -R"
+alias search="sudo pacman -Ss"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

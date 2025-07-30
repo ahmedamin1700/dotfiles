@@ -1,0 +1,93 @@
+#!/bin/bash
+
+# --- Configuration ---
+# Set the command for docker-compose.
+# For Arch/older systems, use "docker-compose".
+# For Fedora/modern systems, use "docker compose".
+COMPOSE_CMD="docker compose"
+
+# --- Script Logic ---
+
+# Function to display help message
+usage() {
+    echo "Usage: manage-db <action> <database>"
+    echo ""
+    echo "Actions:"
+    echo "  start     Start the specified database container."
+    echo "  stop      Stop and remove the specified database container."
+    echo "  restart   Restart the specified database container."
+    echo "  logs      View the logs of the specified database container."
+    echo "  shell     Access the command-line shell for the database."
+    echo "  status    Show the status of the database container."
+    echo ""
+    echo "Databases:"
+    echo "  postgres"
+    echo "  mysql"
+    exit 1
+}
+
+# Check for correct number of arguments
+if [ "$#" -ne 2 ]; then
+    usage
+fi
+
+ACTION=$1
+DATABASE=$2
+BASE_URL="${HOME}/.local/bin/docker"
+
+# Determine which compose file and environment to use
+case "$DATABASE" in
+    postgres)
+        COMPOSE_FILE="${BASE_URL}/postgres/docker-compose.yml"
+        DB_USER="ahmed"  # From postgres/.env
+        DB_NAME="postgres"    # From postgres/.env
+        ;;
+    mysql)
+        COMPOSE_FILE="${BASE_URL}/mysql/docker-compose.yml"
+        DB_USER="ahmed"  # From mysql/.env
+        DB_NAME="mysql"    # From mysql/.env
+        ;;
+    *)
+        echo "Error: Invalid database specified: '$DATABASE'"
+        usage
+        ;;
+esac
+
+# Execute the chosen action
+case "$ACTION" in
+    start)
+        echo "Starting $DATABASE..."
+        $COMPOSE_CMD -f "$COMPOSE_FILE" up -d
+        ;;
+    stop)
+        echo "Stopping $DATABASE..."
+        $COMPOSE_CMD -f "$COMPOSE_FILE" down
+        ;;
+    restart)
+        echo "Restarting $DATABASE..."
+        $COMPOSE_CMD -f "$COMPOSE_FILE" restart
+        ;;
+    logs)
+        echo "Tailing logs for $DATABASE... (Press Ctrl+C to exit)"
+        $COMPOSE_CMD -f "$COMPOSE_FILE" logs -f
+        ;;
+    status)
+        echo "Status for $DATABASE:"
+        $COMPOSE_CMD -f "$COMPOSE_FILE" ps
+        ;;
+    shell)
+        echo "Connecting to $DATABASE shell..."
+        if [ "$DATABASE" = "postgres" ]; then
+            $COMPOSE_CMD -f "$COMPOSE_FILE" exec db psql -U "$DB_USER" -d "$DB_NAME"
+        elif [ "$DATABASE" = "mysql" ]; then
+            # The '-p' flag will prompt for the password.
+            $COMPOSE_CMD -f "$COMPOSE_FILE" exec db mysql -u "$DB_USER" -p"$MYSQL_PASSWORD" "$DB_NAME"
+        fi
+        ;;
+    *)
+        echo "Error: Invalid action specified: '$ACTION'"
+        usage
+        ;;
+esac
+
+echo "Done."
