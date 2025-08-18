@@ -1,28 +1,27 @@
 #!/bin/bash
 
 # --- Configuration ---
-# Set the command for docker-compose.
-# For Arch/older systems, use "docker-compose".
-# For Fedora/modern systems, use "docker compose".
-COMPOSE_CMD="docker compose"
+# Use "podman-compose" on Fedora with Podman.
+COMPOSE_CMD="podman-compose"
 
 # --- Script Logic ---
 
 # Function to display help message
 usage() {
-    echo "Usage: manage-db <action> <database>"
+    echo "Usage: $0 <action> <database>"
     echo ""
     echo "Actions:"
-    echo "  start     Start the specified database container."
-    echo "  stop      Stop and remove the specified database container."
-    echo "  restart   Restart the specified database container."
-    echo "  logs      View the logs of the specified database container."
+    echo "  start     Start the specified database container(s)."
+    echo "  stop      Stop and remove the specified database container(s)."
+    echo "  restart   Restart the specified database container(s)."
+    echo "  logs      View the logs of the specified database container(s)."
     echo "  shell     Access the command-line shell for the database."
-    echo "  status    Show the status of the database container."
+    echo "  status    Show the status of the database container(s)."
     echo ""
     echo "Databases:"
     echo "  postgres"
     echo "  mysql"
+    echo "  sqlserver"
     exit 1
 }
 
@@ -33,19 +32,25 @@ fi
 
 ACTION=$1
 DATABASE=$2
-BASE_URL="${HOME}/.local/bin/docker"
+BASE_URL="/home/ahmed/.local/bin/podman"
 
 # Determine which compose file and environment to use
 case "$DATABASE" in
     postgres)
         COMPOSE_FILE="${BASE_URL}/postgres/docker-compose.yml"
-        DB_USER="ahmed"  # From postgres/.env
-        DB_NAME="postgres"    # From postgres/.env
+        DB_USER=$(grep POSTGRES_USER ${BASE_URL}/postgres/.env | cut -d '=' -f2)
+        DB_NAME=$(grep POSTGRES_DB ${BASE_URL}/postgres/.env | cut -d '=' -f2)
         ;;
     mysql)
         COMPOSE_FILE="${BASE_URL}/mysql/docker-compose.yml"
-        DB_USER="ahmed"  # From mysql/.env
-        DB_NAME="mysql"    # From mysql/.env
+        DB_USER=$(grep MYSQL_USER ${BASE_URL}/mysql/.env | cut -d '=' -f2)
+        DB_NAME=$(grep MYSQL_DATABASE ${BASE_URL}/mysql/.env | cut -d '=' -f2)
+        DB_PASS=$(grep MYSQL_PASSWORD ${BASE_URL}/mysql/.env | cut -d '=' -f2)
+        ;;
+    sqlserver)
+        COMPOSE_FILE="${BASE_URL}/sqlserver/docker-compose.yml"
+        DB_USER="sa"
+        DB_PASS=$(grep MSSQL_SA_PASSWORD ${BASE_URL}/sqlserver/.env | cut -d '=' -f2)
         ;;
     *)
         echo "Error: Invalid database specified: '$DATABASE'"
@@ -56,15 +61,15 @@ esac
 # Execute the chosen action
 case "$ACTION" in
     start)
-        echo "Starting $DATABASE..."
+        echo "Starting $DATABASE with podman-compose..."
         $COMPOSE_CMD -f "$COMPOSE_FILE" up -d
         ;;
     stop)
-        echo "Stopping $DATABASE..."
+        echo "Stopping $DATABASE with podman-compose..."
         $COMPOSE_CMD -f "$COMPOSE_FILE" down
         ;;
     restart)
-        echo "Restarting $DATABASE..."
+        echo "Restarting $DATABASE with podman-compose..."
         $COMPOSE_CMD -f "$COMPOSE_FILE" restart
         ;;
     logs)
@@ -80,8 +85,9 @@ case "$ACTION" in
         if [ "$DATABASE" = "postgres" ]; then
             $COMPOSE_CMD -f "$COMPOSE_FILE" exec db psql -U "$DB_USER" -d "$DB_NAME"
         elif [ "$DATABASE" = "mysql" ]; then
-            # The '-p' flag will prompt for the password.
-            $COMPOSE_CMD -f "$COMPOSE_FILE" exec db mysql -u "$DB_USER" -p"$MYSQL_PASSWORD" "$DB_NAME"
+            $COMPOSE_CMD -f "$COMPOSE_FILE" exec db mysql -u "$DB_USER" -p"$DB_PASS" "$DB_NAME"
+        elif [ "$DATABASE" = "sqlserver" ]; then
+            $COMPOSE_CMD -f "$COMPOSE_FILE" exec db /opt/mssql-tools/bin/sqlcmd -S localhost -U "$DB_USER" -P "$DB_PASS"
         fi
         ;;
     *)

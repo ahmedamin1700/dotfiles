@@ -56,8 +56,8 @@ bindkey "^[[B" history-search-forward
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza --color=always $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --color=always $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd --color=always $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'lsd --color=always $realpath'
 
 # Add in snippets
 zinit snippet OMZP::git
@@ -77,18 +77,18 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases
 alias v="nvim"
-alias ll="eza --color=always --icons=always"
-alias la="eza --color=always --icons=always -all"
-alias lt="eza --color=always --icons=always -all --tree"
-alias dstart="sudo systemctl start docker.service"
-alias dstop="sudo systemctl stop docker.service"
-alias togglekeyboard="sh -c ~/.scripts/togglekeyboard"
+alias ll="lsd --color=always --icon=always"
+alias la="lsd --color=always --icon=always -all"
+alias lt="lsd --color=always --icon=always -all --tree"
 
 # dnf
-alias install="sudo pacman -S"
-alias update="sudo pacman -Syy"
-alias remove="sudo pacman -R"
-alias search="sudo pacman -Ss"
+alias install="sudo dnf install"
+alias update="sudo dnf upgrade"
+alias remove="sudo dnf remove"
+alias search="sudo dnf search"
+alias whatsapp="uwsm app -- chromium-browser --ozone-platform=wayland --app=https://web.whatsapp.com"
+alias youtube="uwsm app -- chromium-browser --ozone-platform=wayland --app=https://youtube.com"
+alias twitter="uwsm app -- chromium-browser --ozone-platform=wayland --app=https://x.com"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
