@@ -17,6 +17,7 @@ fi
 # source local bins
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/snap/bin:$PATH"
+export PATH="$HOME/.local/bin/scripts:$PATH"
 
 # source zinit.
 source "${ZINIT_HOME}/zinit.zsh"
