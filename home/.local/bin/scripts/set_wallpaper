@@ -1,10 +1,7 @@
 #!/bin/bash
+# Directory containing wallpapers
+WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
 
-# Directory containing your wallpapers
-WALLPAPER_DIR="$HOME/Wallpapers"
+# Change wallpaper randomly
+feh --randomize --bg-fill "$WALLPAPER_DIR"/*
 
-# Select a random wallpaper
-RANDOM_WALLPAPER=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
-
-# Set the wallpaper using swww
-swww img "$RANDOM_WALLPAPER" --transition-type any

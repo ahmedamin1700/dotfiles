@@ -35,6 +35,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 # Start Picom for transparency and effects
 exec_always --no-startup-id picom &
+exec_always --no-startup-id ~/.local/bin/scripts/set_wallpaper &
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf &
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -117,13 +119,16 @@ bindsym Print exec maim -s | xclip -selection clipboard -t image/png && notify-s
 # select a region and save it to a file5
 bindsym $mod+Print exec maim -s ~/Pictures/Screenshots/$(date +%s).png && notify-send "Screenshot Saved" "Selected area saved to file."
 
+# Wallpapaer
+bindsym $mod+Shift+w exec ~/.local/bin/scripts/set_wallpaper 
+
 # gaps
 gaps inner 5px
 
 gaps outer 5px
 
 # remove borders
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
